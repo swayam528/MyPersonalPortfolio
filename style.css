@@ -230,46 +230,79 @@ section{
 .btn-container{
     gap: 1rem;
 }
-#about{
+#about {
     position: relative;
+    text-align: center;
+    padding: 40px 0;
 }
-.about-containers{
-    gap:2rem;
-    margin: bottom 2rem;
-    margin: top 2rem;
+
+.circle {
+    border-radius: 50%;
 }
-.about-details-container{
-    justify-content: center;
-    flex-direction: column;
-}
-.about-containers, .about-details-container{
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    /* Corrected margin syntax */
+    margin-top: 2rem;
+    /* Corrected margin syntax */
     display: flex;
 }
-.about-pic{
-    border-radius: 2rem;   
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    /* Added gap to space out children */
 }
-.arrow{
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
 }
-.details-container{
+
+.details-container {
     padding: 1.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
     text-align: center;
 }
-.section-container{
+
+.section-container {
     gap: 4rem;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
 }
-.section__pic-container{
+
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    /* Adjust this value to reduce the gap */
+    color: #111;
+}
+
+.section__text__p1 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
 }
 /*Experience*/
 #experience{
