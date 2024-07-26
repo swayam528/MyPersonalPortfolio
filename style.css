@@ -243,9 +243,7 @@ section{
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    /* Corrected margin syntax */
     margin-top: 2rem;
-    /* Corrected margin syntax */
     display: flex;
 }
 
@@ -254,7 +252,6 @@ section{
     flex-direction: column;
     display: flex;
     gap: 2rem;
-    /* Added gap to space out children */
 }
 
 .about-pic {
@@ -283,7 +280,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
 }
 
 .section__pic-container {
@@ -295,7 +291,6 @@ section{
 .title {
     font-size: 2.5em;
     margin-bottom: 20px;
-    /* Adjust this value to reduce the gap */
     color: #111;
 }
 
@@ -318,6 +313,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 2rem;
 }
 .article-container{
     display:flex;
@@ -329,9 +325,12 @@ section{
 }
 article{
     display: flex;
-    width: 10rem;
+    width: 100%;
+    max-width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
+    padding: 1rem;
+
 }
 article .icon{
     cursor: default;
@@ -396,4 +395,9 @@ article .icon{
 .nav-links-container{
     display: flex;
     flex-direction: row;
+}
+.aboutMePhoto{
+    height: 300px;
+    border-radius: 15%;
+    margin: 50px;
 }
